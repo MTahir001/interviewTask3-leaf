@@ -10,6 +10,7 @@ body {
   background: rgb(112, 111, 111);
   display: grid;
   place-items: center;
+  min-width: 460px;
 }
 
 .child {
@@ -31,4 +32,36 @@ body {
 .c3 {
   background: green;
   right: 250px;
+}
+/* -------------RESPONSIVE DESIGN------------- */
+@media (max-width: 1210px) {
+  .child {
+    height: 200px;
+    width: 200px;
+    border-top-left-radius: 140px;
+    border-bottom-right-radius: 140px;
+  }
+  .c1 {
+    left: 140px;
+  }
+
+  .c3 {
+    right: 140px;
+  }
+}
+
+@media (max-width: 615px) {
+  .child {
+    height: 150px;
+    width: 150px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+  .c1 {
+    left: 100px;
+  }
+
+  .c3 {
+    right: 100px;
+  }
 }
